@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Assessoria de Imprensa · Outubro 2026</title>
+<style>
+:root{
+  --bg:#f6f5f2; --surface:#ffffff; --ink:#1a1a18; --ink-soft:#5c5a54;
+  --line:#e2dfd8; --accent:#0f3d2e; --accent-soft:#e8f0ec;
+  --alert:#7a1f1f; --alert-bg:#fdf2f0; --alert-line:#e8c4bd;
+  --ok:#0f5132; --ok-bg:#e8f0ec; --wait-bg:#f5f1e6; --wait:#6b5a25;
+  --lock-bg:#f0eeea; --lock:#4a4842;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.62;-webkit-text-size-adjust:100%}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px 80px}
+
+header{background:var(--accent);color:#fff;padding:52px 0 44px;margin-bottom:36px}
+header .wrap{padding-bottom:0}
+.eyebrow{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+  opacity:.75;margin:0 0 14px}
+header h1{margin:0 0 6px;font-size:2rem;line-height:1.2;font-weight:600;letter-spacing:-.01em}
+header h2{margin:0 0 22px;font-size:1.05rem;font-weight:400;opacity:.85}
+.meta{border-top:1px solid rgba(255,255,255,.22);padding-top:18px;
+  display:flex;flex-wrap:wrap;gap:10px 34px;font-size:.86rem}
+.meta div span{display:block;opacity:.65;font-size:.72rem;
+  letter-spacing:.1em;text-transform:uppercase;margin-bottom:2px}
+
+.intro{font-size:1.02rem;color:var(--ink-soft);margin-bottom:34px}
+
+.alert{background:var(--alert-bg);border:1px solid var(--alert-line);
+  border-left:5px solid var(--alert);border-radius:8px;padding:26px 26px 22px;margin:0 0 44px}
+.alert h3{margin:0 0 14px;color:var(--alert);font-size:1.12rem;line-height:1.35}
+.alert p{margin:0 0 12px}
+.alert .lbl{font-weight:600;display:block;margin:18px 0 8px}
+.alert ul{margin:0 0 4px;padding-left:22px}
+.alert li{margin-bottom:6px}
+.alert .why{background:#fff;border-radius:6px;padding:13px 16px;margin:16px 0;
+  font-size:.94rem;border:1px solid var(--alert-line)}
+
+section{margin-bottom:52px}
+.snum{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);font-weight:700;margin-bottom:8px}
+section>h2{margin:0 0 26px;font-size:1.55rem;font-weight:600;letter-spacing:-.01em;
+  padding-bottom:12px;border-bottom:2px solid var(--accent)}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:9px;
+  padding:22px 24px;margin-bottom:18px}
+.card h3{margin:0 0 4px;font-size:1.12rem;font-weight:600;line-height:1.35}
+.when{font-size:.85rem;color:var(--accent);font-weight:600;margin:0 0 14px;
+  letter-spacing:.01em}
+.card p{margin:0 0 12px}
+.card p:last-child,.card ul:last-child{margin-bottom:0}
+.card ul{margin:0 0 12px;padding-left:20px}
+.card li{margin-bottom:7px}
+.card li:last-child{margin-bottom:0}
+
+.pauta{background:var(--accent-soft);border-radius:6px;padding:13px 16px;
+  font-size:.94rem;margin-top:14px}
+.pauta b{color:var(--accent)}
+.flag{background:var(--wait-bg);border-left:4px solid var(--wait);border-radius:0 6px 6px 0;
+  padding:13px 16px;font-size:.94rem;margin-top:14px}
+.quote{border-left:3px solid var(--accent);padding:6px 0 6px 18px;margin:14px 0;
+  font-style:italic;color:var(--ink-soft)}
+.done{display:inline-block;background:var(--ok-bg);color:var(--ok);font-size:.72rem;
+  font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:3px 9px;border-radius:20px;margin-left:8px;vertical-align:middle}
+
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:8px}
+table{width:100%;border-collapse:collapse;background:var(--surface);
+  font-size:.93rem;min-width:520px}
+th{background:var(--accent);color:#fff;text-align:left;padding:12px 14px;
+  font-weight:600;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:nth-child(even){background:#fbfaf8}
+.tag{display:inline-block;font-size:.76rem;font-weight:600;padding:3px 10px;
+  border-radius:20px;white-space:nowrap}
+.t-ok{background:var(--ok-bg);color:var(--ok)}
+.t-wait{background:var(--wait-bg);color:var(--wait)}
+.t-lock{background:var(--lock-bg);color:var(--lock)}
+
+footer{border-top:2px solid var(--accent);padding-top:26px;margin-top:8px}
+footer p{margin:0 0 16px;color:var(--ink-soft)}
+.sig{font-weight:600;color:var(--ink);font-size:1.02rem;margin-bottom:2px}
+.sig+div{font-size:.9rem;color:var(--ink-soft)}
+
+@media(max-width:600px){
+  header{padding:38px 0 32px}
+  header h1{font-size:1.55rem}
+  section>h2{font-size:1.3rem}
+  .card{padding:18px 17px}
+  .alert{padding:20px 18px}
+  .wrap{padding:0 16px 60px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow">Comunicado à assessoria de imprensa</p>
+    <h1>Ações de Marketing · Outubro 2026</h1>
+    <h2>Øliver's Pizza · Temakeria Universitária · Ogro Steaks</h2>
+    <div class="meta">
+      <div><span>Data</span>1º de outubro de 2026</div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section>
+  <p>Olá, time! Segue o panorama das ações de marketing de outubro, organizado por marca, para vocês trabalharem pautas, sugestões de matéria e respostas a veículos ao longo do mês.</p>
+  <p>Outubro tem três datas em comum entre as marcas: <b>Dia das Crianças (12/10)</b>, <b>Dia do Professor (15/10)</b> e <b>Halloween (31/10)</b>, cada uma tratada do jeito de cada marca. A Temakeria tem ainda a <b>inauguração da unidade de Araruama</b>, e a Ogro celebra o <b>Dia Internacional do Chef (20/10)</b>.</p>
+</section>
+
+<section>
+  <p class="snum">Seção 01</p>
+  <h2>Øliver's Pizza · "Travessuras da Øliver's"</h2>
+  <p>Outubro tem duas datas que parecem opostas e são a mesma coisa: fantasia. A campanha do mês junta Dia das Crianças, Dia do Professor e Halloween num só conceito.</p>
+
+  <div class="card">
+    <h3>Dia das Crianças</h3>
+    <p class="when">12/10 · feriadão de sábado a segunda</p>
+    <p>O Dia das Crianças é uma das datas mais importantes do ano para a Øliver's. Uma marca que nasceu no quintal de uma família em Maricá tem a família como raiz, e o salão cheio de crianças é a cara dela. A campanha resgata a criança que existe em cada um de nós: nas redes, o próprio time aparece com fotos de infância e convida os clientes a fazer o mesmo.</p>
+    <ul>
+      <li><b>No salão:</b> a criança vira protagonista da própria pizza. No rodízio, decora a esfiha doce com M&amp;M's ou confete. No à la carte, a mesa com criança recebe uma pizza doce pequena ou esfiha para decorar.</li>
+      <li><b>Brinde:</b> nas unidades com salão, cada criança leva para casa uma folha de desenho Øliver's.</li>
+      <li><b>Delivery:</b> cupom de Dia das Crianças no canal próprio da marca. ⏳ <i>Valor e regras em fechamento; confirmamos antes de qualquer material sair.</i></li>
+    </ul>
+    <div class="pauta"><b>Ângulo de pauta:</b> a experiência em família como diferencial do salão; a criança participando do preparo em vez de só consumir.</div>
+  </div>
+
+  <div class="card">
+    <h3>Dia do Professor</h3>
+    <p class="when">15/10 · quinta</p>
+    <p>A Øliver's acredita e investe em cultura, esporte e educação, e por isso o Dia do Professor tem um lugar especial no calendário da marca. É a data de agradecer a quem forma as pessoas que sentam às mesas da Øliver's todos os dias.</p>
+    <ul>
+      <li><b>Formato:</b> conteúdo nas redes, com humor de sala de aula e convite para o cliente marcar o professor que marcou a vida dele.</li>
+    </ul>
+    <div class="pauta"><b>Ângulo de pauta:</b> marca de alimentação que apoia educação e transforma a data em homenagem, não em promoção.</div>
+  </div>
+
+  <div class="card">
+    <h3>Halloween · "Øliver's After Dark"</h3>
+    <p class="when">31/10 · sábado, emenda com Finados</p>
+    <p>O Halloween é onde a personalidade da Øliver's aparece mais forte. O cardápio é cheio de sabores autorais inspirados em cultura pop, cinema e séries, que entram no clima da noite quase sem esforço.</p>
+    <ul>
+      <li><b>No salão:</b> unidades com salão decoradas e bonitas para receber quem vai passar a data na Øliver's.</li>
+      <li><b>Nas redes:</b> as pizzas autorais ganham destaque com o vermelho, o verde e os tons escuros do Halloween, com peças especiais e conteúdo com influenciadores.</li>
+      <li><b>Delivery:</b> cupom de travessura enviado à base de clientes. ⏳ <i>Valor e regras em fechamento.</i></li>
+    </ul>
+    <div class="pauta"><b>Ângulo de pauta:</b> cardápio autoral de pizzaria inspirado em cultura pop, cinema e séries.</div>
+  </div>
+
+  <div class="card">
+    <h3>Rodízio e reservas</h3>
+    <p class="when">Mês todo</p>
+    <p>Em outubro, a Øliver's mantém <b>valores especiais para mesas reservadas com antecedência</b> nas unidades com salão.</p>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Seção 02</p>
+  <h2>Temakeria Universitária</h2>
+
+  <div class="card">
+    <h3>Inauguração da unidade de Araruama</h3>
+    <p class="when">09/10 · campanha segue o mês inteiro</p>
+    <p>Nova unidade franqueada da Temakeria Universitária em <b>Araruama, na Região dos Lagos</b>.</p>
+    <ul>
+      <li><b>Ativações:</b> landing page com presente na primeira compra, ação com influenciadores locais, brindes e cupons impressos.</li>
+    </ul>
+    <div class="pauta"><b>Ângulo de pauta:</b> expansão da marca para o interior do estado e a Região dos Lagos; chegada a uma praça nova e geração de emprego local. Pauta regional forte para veículos de Araruama, Cabo Frio e Região dos Lagos.</div>
+  </div>
+
+  <div class="card">
+    <h3>Dia das Crianças</h3>
+    <p class="when">12/10</p>
+    <p>A data é para quem lembra de ter sido criança. O feriado emenda o fim de semana, um dos poucos do mês em que a casa inteira senta junto, e na Temakeria ninguém fica de fora da mesa.</p>
+    <ul>
+      <li><b>Destaques:</b> sobremesas e fritinhos, como o Big Hot de Doce de Leite com Paçoca, os harumakis doces e os hot rolls doces.</li>
+      <li><b>Cupom <span style="font-family:ui-monospace,Menlo,Consolas,monospace;background:var(--accent-soft);padding:2px 8px;border-radius:4px">DIA12</span></b> no canal próprio da marca. ⏳ <i>Pedido mínimo em fechamento.</i></li>
+      <li><b>Conteúdo:</b> influenciadores, memes e trends.</li>
+    </ul>
+    <div class="flag">⚠️ Nenhuma peça digital da Temakeria usa imagem de criança.</div>
+  </div>
+
+  <div class="card">
+    <h3>Dia dos Professores</h3>
+    <p class="when">15/10</p>
+    <ul>
+      <li><b>Destaques:</b> Temaki Salmão Tataki, Temaki Salmão Crisp e Temaki Shi-Sa.</li>
+      <li><b>Cupom <span style="font-family:ui-monospace,Menlo,Consolas,monospace;background:var(--accent-soft);padding:2px 8px;border-radius:4px">PROFESSOR</span></b> no canal próprio da marca.</li>
+      <li><b>Conteúdo:</b> collab com Felipe Vecchi e trends de "professor que ama japa".</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Halloween</h3>
+    <p class="when">31/10</p>
+    <p>Flambados e spicy, num Halloween bonito e não caricato: Big Hot Roll de Salmão com Cubos, Joe de Salmão Flambado, Sushi de Salmão Flambado, Hot Roll Spicy e Temaki Salmão Spicy.</p>
+  </div>
+
+  <div class="flag">⚠️ <b>Importante para a comunicação:</b> o cardápio da Temakeria está sendo renovado, com novos nomes, combos e promoções. <b>Nenhuma peça, release ou resposta a veículo deve citar preço de item.</b> A comunicação de outubro se apoia em cupom, combo e conteúdo.</div>
+</section>
+
+<section>
+  <p class="snum">Seção 03</p>
+  <h2>Ogro Steaks</h2>
+  <p>Em outubro, a Ogro trabalha as datas dentro dos quadros que já tem nas redes, com Jimmy Ogro e Igor à frente das câmeras.</p>
+
+  <div class="card">
+    <h3>Dia das Crianças · "Faça sua criança interior feliz hoje"</h3>
+    <p class="when">12/10 · segunda</p>
+    <p>Episódio do quadro <b>"Já deu por hoje"</b>: adulto no feriado, comendo com as mãos, lambuzado e feliz, sem culpa.</p>
+  </div>
+
+  <div class="card">
+    <h3>Dia do Professor</h3>
+    <p class="when">15/10 · quinta</p>
+    <p>A entrega especial do mês do quadro <b>"Fazer o quê, exageramos"</b> vai para um professor.</p>
+  </div>
+
+  <div class="card">
+    <h3>Dia Internacional do Chef</h3>
+    <p class="when">20/10 · terça</p>
+    <p>Vídeo do <b>Papo de Ogro</b> com Jimmy e Igor juntos. É a data em que a marca tem mais autoridade para falar, com dois profissionais de cozinha na frente da câmera.</p>
+    <div class="pauta"><b>Ângulo de pauta:</b> chef com trajetória na TV à frente de uma hamburgueria; os bastidores da cozinha da Ogro.</div>
+  </div>
+
+  <div class="card">
+    <h3>Halloween</h3>
+    <p class="when">31/10 · sábado</p>
+    <p>O Papo de Ogro conta <b>a origem do apelido</b>, com o Jimmy explicando de onde veio o "ogro". É história de marca, e não post de data comemorativa. Nos produtos, os burgers "monstros" do cardápio: <b>Ogrostela, Hiper McManis e Texano</b>.</p>
+    <div class="pauta"><b>Ângulo de pauta:</b> a história por trás do nome Jimmy Ogro.</div>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Seção 04</p>
+  <h2>Quadro consolidado</h2>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Ação</th><th>Data</th><th>Marca</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td><b>Inauguração Araruama</b></td><td><b>09/10</b></td><td>Temakeria</td><td><span class="tag t-ok">liberado</span></td></tr>
+        <tr><td>Dia das Crianças</td><td>12/10</td><td>Øliver's · Temakeria · Ogro</td><td><span class="tag t-ok">liberado</span></td></tr>
+        <tr><td>Dia do Professor</td><td>15/10</td><td>Øliver's · Temakeria · Ogro</td><td><span class="tag t-ok">liberado</span></td></tr>
+        <tr><td>Dia Internacional do Chef</td><td>20/10</td><td>Ogro</td><td><span class="tag t-ok">liberado</span></td></tr>
+        <tr><td>Halloween</td><td>31/10</td><td>Øliver's · Temakeria · Ogro</td><td><span class="tag t-ok">liberado</span></td></tr>
+        <tr><td>Rodízio + reservas com valor especial</td><td>mês todo</td><td>Øliver's</td><td><span class="tag t-ok">liberado</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="margin-top:20px;color:var(--ink-soft)"><b>Regra transversal:</b> todas as ações contam com conteúdo de parceiros e influenciadores, divulgação nas redes próprias e disparos para a base de clientes.</p>
+</section>
+
+<footer>
+  <p>Qualquer demanda de veículo sobre as marcas, favor direcionar à Diretoria de Marketing antes do retorno.</p>
+</footer>
+
+</div>
+</body>
+</html>
